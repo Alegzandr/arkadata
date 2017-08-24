@@ -1,0 +1,15 @@
+html {
+  font-size: 80%;
+}
+
+@media (min-width: 1023px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

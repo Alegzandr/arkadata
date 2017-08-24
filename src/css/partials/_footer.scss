@@ -1,0 +1,42 @@
+footer {
+  float: left;
+  width: 100%;
+  display: table;
+  padding-top: 20px;
+  font-size: .9em;
+  height: 80px;
+  border-top: 1px solid $primary-color;
+  border-bottom: 14px solid $primary-color;
+
+  a, a:active {
+    text-decoration: none;
+    color: $link-color;
+  }
+
+  a:hover {
+    color: $hover-color;
+  }
+
+  div, img {
+    float: left;
+  }
+
+  div {
+    width: calc(80% - 4vw);
+    line-height: 1.6;
+    padding: 0 2vw;
+    margin-top: 5px;
+  }
+
+  img {
+    width: 20%;
+    margin-top: -1%;
+  }
+}
+
+@media (min-width: 641px) {
+  footer {
+    width: calc(100% - 310px);
+    float: left;
+  }
+}

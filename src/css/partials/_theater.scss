@@ -1,0 +1,21 @@
+body.theater {
+  overflow-y: hidden;
+}
+
+.middle-text.theater, .video.theater {
+  position: fixed;
+  width: calc(100vw - 310px);
+  left: 0;
+  z-index: 1;
+}
+
+.middle-text.theater {
+  top: -18px;
+  line-height: 3;
+  background: $bg-color;
+}
+
+.video.theater {
+  top: 46px;
+  height: calc(100vh - 46px);
+}
