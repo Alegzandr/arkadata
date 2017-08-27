@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { NavLink,  Route } from 'react-router-dom';
 import Stream from './Stream';
 import Schedule from './Schedule';
+import Playlists from './Playlists';
+import Videos from './Videos';
 import Extension from './Extension';
 import footerImg from './../../img/footer.png';
 
@@ -14,6 +16,8 @@ class App extends Component {
             <ul>
               <li><NavLink exact to="/" activeClassName="active">Stream</NavLink></li>
               <li><NavLink to="/schedule" activeClassName="active">Schedule</NavLink></li>
+              <li><NavLink to="/playlists" activeClassName="active">Playlists</NavLink></li>
+              <li><NavLink to="/videos" activeClassName="active">Videos</NavLink></li>
               <li><NavLink to="/extension" activeClassName="active">Extension</NavLink></li>
               <li className="muted no-mobile">Preview</li>
             </ul>
@@ -24,11 +28,15 @@ class App extends Component {
 
         <Route exact path='/' component={Stream} />
         <Route path='/schedule' component={Schedule} />
+        <Route path='/playlists' component={Playlists} />
+        <Route path='/videos' component={Videos} />
         <Route path='/extension' component={Extension} />
 
         <aside>
           <div className="user">
-            <span>Alegzandr</span>
+          <a href={undefined} className="btn-connect">
+            Log in with <i className="fa fa-twitch" aria-hidden="true"></i>
+          </a>
           </div>
 
           <iframe title="Twitch chat"

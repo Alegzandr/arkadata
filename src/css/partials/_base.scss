@@ -104,6 +104,23 @@ main > div:first-of-type {
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.55);
 }
 
+.btn-connect {
+  border: 1px solid $primary-color;
+  padding: 7px;
+}
+
+.btn-connect, .fa-twitch {
+  transition: all .9s ease;
+}
+
+.btn-connect:hover .fa-twitch {
+  color: #4b367c;
+}
+
+.btn-connect:hover {
+  border-color: #4b367c;
+}
+
 @media (min-width: 641px) {
   .no-mobile {
     display: block;
