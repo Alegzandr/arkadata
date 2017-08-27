@@ -19,7 +19,6 @@ class App extends Component {
               <li><NavLink to="/playlists" activeClassName="active">Playlists</NavLink></li>
               <li><NavLink to="/videos" activeClassName="active">Videos</NavLink></li>
               <li><NavLink to="/extension" activeClassName="active">Extension</NavLink></li>
-              <li className="muted no-mobile">Preview</li>
             </ul>
           </div>
 

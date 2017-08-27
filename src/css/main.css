@@ -2745,8 +2745,6 @@ header {
     font-size: .95em; }
   header ul > li:first-of-type {
     padding: 0 1vw 0 0; }
-  header ul > li:last-of-type {
-    float: right; }
   header a, header a:active {
     text-decoration: none;
     color: #00ab88; }
